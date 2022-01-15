@@ -19,10 +19,10 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .icon-side{
     width: 30%;
-display: grid;
-grid-template-columns: repeat(6, 1fr);
-align-items: center;
-}
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    }
 
 .home-icon:hover{
     transform: scale(1.08);
@@ -53,7 +53,7 @@ align-items: center;
 .first-section-image img{
     width: 80%;
 }
-f.irst-section-paragraph{
+.first-section-paragraph{
     margin-top: 0;
 }
 button{
@@ -81,13 +81,14 @@ button:hover{
 .icon-section{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    width: 1000px;
-    height: 40px;
-    border-top: 3px solid gray;
-    border-bottom: 3px solid gray;
+    width: 70%px;
+    /* height: 40px; */
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
     align-items: center;
     justify-content: center;
-    margin-left: 130px;
+    margin-left: 85px;
+    margin-right: 85px;
     margin-top: 100px;
 }
 /* }end icon section */
@@ -178,6 +179,7 @@ footer{
     color: white;
     height: 120px;
     width: 100%;
+    margin-left:33px;
 }
 .footerclass{
     margin-top: 0;
@@ -191,55 +193,39 @@ footer{
 }
 
 /* media quiery part */
-@media only screen and (max-width:688px) {
+@media (max-width:688px) {
     .home-icon{
         display: flex;
         flex-direction: column;
-        max-width: 688px;
-        justify-content: space-between;
-        margin-top: 40px;
+    }
+    .icon-side{
+        display: flex;
+        flex-direction: column;
     }
     .first-section{
         display: flex;
         flex-direction: column;
-        margin-left:30px;
-    }
-    .first-section-writing{
-        font-size: medium;
-    }
-    button{
-        background-image: linear-gradient(tomato, gold);
-        border-radius: 20px;
-        height: 24px;
-        width: 116px;
-        margin-left: 20px;
-        margin-top: 10px;
+        border-top: 0;
+        border-left: 0;
+        margin-left: 0;
     }
     .icon-section{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        width: 80%;
-        height: 80px;
-        border-top: 3px solid gray;
-        border-bottom: 3px solid gray;
-        /* align-items: center;
-        justify-content: center; */
-        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
     }
     .collection{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 10px;
-        
+        display: flex;
+        flex-direction: column;
+    }
+    .see-more{
+        margin-left: 150px;
+    }
+    .feedback{
+        margin-left: 200px;
     }
     .extra-section{
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       grid-column-gap: 10px;
-       grid-row-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
     }
-    footer{
-        justify-content: center;
-    }
-    
 }
