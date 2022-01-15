@@ -169,7 +169,7 @@ color: tomato;
     font-size: 1.5em;
 }
 .feedback{
-    margin-left: right;
+    margin-left: 1100px;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -271,9 +271,7 @@ footer{
     }
     .see-more{
         margin-left: 200px;
-        background-color: crimson;
-        border: 2px solid gray;
-    }
+        }
    
     .extra-section{
         display: grid;
@@ -282,8 +280,7 @@ footer{
     }
     .feedback{
         width: 100px;
-        justify-content: right, bottom (0, 0);
-        j
+        margin-left: 200px;
     }
     
 }
