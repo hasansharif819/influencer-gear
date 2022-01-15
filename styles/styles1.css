@@ -149,3 +149,43 @@ margin-top: 0;
 width: 220px;
 color: tomato;
 }
+
+/* extra feature section */
+.extra-part{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 5px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.paragraph2{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.feedback{
+    margin-left: 1100px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* footer  */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 120px;
+    width: 100%;
+}
+.footerclass{
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 40px;
+    margin-top: 0;
+}
